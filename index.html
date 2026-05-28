@@ -373,6 +373,48 @@
     .footer-legal a:hover { color: var(--text); }
 
 
+    /* ─── PROFILES STRIP ─── */
+    #profiles { padding: 28px 0; background: var(--bg-alt); border-top: 1px solid var(--border-subtle); }
+    .profiles-strip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .profiles-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .profile-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      white-space: nowrap;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .profile-chip::before {
+      content: '';
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      opacity: 0.6;
+      flex-shrink: 0;
+    }
+    .profile-chip:hover { border-color: var(--border); color: var(--text); }
+
     /* ─── REVEAL ANIMATIONS ─── */
     .reveal { opacity: 0; transform: translateY(28px); }
     .reveal.visible { opacity: 1; transform: translateY(0); transition: opacity 0.65s ease, transform 0.65s ease; }
@@ -457,13 +499,13 @@
   <div class="container">
     <div class="hero-grid">
       <div class="hero-content">
-        <p class="hero-eyebrow reveal">Coach Exécutif &amp; Stratège de Dirigeants — Annecy &amp; Visio</p>
+        <p class="hero-eyebrow reveal">Coach Exécutif &amp; Stratège — Dirigeants · Professions Libérales · Entrepreneurs — Annecy &amp; Visio</p>
         <h1 class="hero-title reveal reveal-delay-1">
-          Vous dirigez<br>une entreprise.<br><em>Qui vous dirige,<br>vous&nbsp;?</em>
+          Vous excellez<br>dans votre métier.<br><em>Qui vous aide<br>à vous diriger&nbsp;?</em>
         </h1>
         <p class="hero-sub reveal reveal-delay-2">
           Programme de coaching individuel sur 6 mois — <strong>Méthode APEX Leadership™</strong><br>
-          Pour les dirigeants d'entreprise, mais aussi pour <em>toute personne</em> souhaitant transformer son leadership, sa présence et son rapport à elle-même — dans la sphère professionnelle comme personnelle.
+          Pour les dirigeants d'entreprise, <em>les professions libérales</em> et tous ceux qui pilotent une activité — et veulent enfin se retrouver eux-mêmes au passage.
         </p>
         <div class="hero-actions reveal reveal-delay-3">
           <a href="#candidature" class="btn-primary">
@@ -494,6 +536,26 @@
   </div>
 </section>
 
+<!-- ─── PROFILES STRIP ─── -->
+<section id="profiles">
+  <div class="container">
+    <div class="profiles-strip">
+      <span class="profiles-label">Pour&nbsp;:</span>
+      <span class="profile-chip">Dentistes</span>
+      <span class="profile-chip">Avocats</span>
+      <span class="profile-chip">Kinésithérapeutes</span>
+      <span class="profile-chip">Ostéopathes</span>
+      <span class="profile-chip">Médecins</span>
+      <span class="profile-chip">Architectes</span>
+      <span class="profile-chip">Notaires</span>
+      <span class="profile-chip">Commerçants</span>
+      <span class="profile-chip">Dirigeants PME</span>
+      <span class="profile-chip">Fondateurs</span>
+      <span class="profile-chip">Cadres en transition</span>
+    </div>
+  </div>
+</section>
+
 <div class="gold-line"></div>
 
 <!-- ─── PROBLEM ─── -->
@@ -509,12 +571,12 @@
         </p>
       </div>
       <ul class="pain-list">
-        <li class="pain-item reveal"><span class="pain-num">01</span><span class="pain-text">Vous avez construit une belle structure, mais vous vous sentez <strong>seul face aux décisions qui comptent vraiment</strong></span></li>
-        <li class="pain-item reveal reveal-delay-1"><span class="pain-num">02</span><span class="pain-text">Votre entourage fonctionne, mais vous sentez que <strong>vous ne tirez pas le meilleur des relations qui comptent</strong></span></li>
-        <li class="pain-item reveal reveal-delay-2"><span class="pain-num">03</span><span class="pain-text">Vous avez réussi en exécutant — mais aujourd'hui, <strong>votre vie a besoin d'un leader-visionnaire</strong>, pas d'un super-opérationnel</span></li>
-        <li class="pain-item reveal reveal-delay-3"><span class="pain-num">04</span><span class="pain-text">Vous êtes entouré de gens qui vous respectent mais <strong>personne ne vous dit la vérité</strong></span></li>
-        <li class="pain-item reveal reveal-delay-4"><span class="pain-num">05</span><span class="pain-text">Vous portez beaucoup — et vous avez du mal à <strong>poser votre propre cap, pour vous</strong></span></li>
-        <li class="pain-item reveal reveal-delay-5"><span class="pain-num">06</span><span class="pain-text">Vous sentez une <strong>dérive entre qui vous êtes et la personne que vous incarnez au quotidien</strong></span></li>
+        <li class="pain-item reveal"><span class="pain-num">01</span><span class="pain-text">Vous avez bâti votre activité — cabinet, commerce, entreprise — mais vous vous sentez <strong>seul face aux décisions qui comptent vraiment</strong></span></li>
+        <li class="pain-item reveal reveal-delay-1"><span class="pain-num">02</span><span class="pain-text">Vous êtes devenu expert dans votre domaine, mais <strong>personne ne vous a appris à gérer des collaborateurs</strong>, à fixer vos limites ou à donner une direction claire à votre activité</span></li>
+        <li class="pain-item reveal reveal-delay-2"><span class="pain-num">03</span><span class="pain-text">Vous êtes à la fois le meilleur technicien et le patron — et vous portez <strong>cette double casquette sans y avoir été préparé</strong></span></li>
+        <li class="pain-item reveal reveal-delay-3"><span class="pain-num">04</span><span class="pain-text">Vous êtes entouré de gens qui vous respectent mais <strong>personne ne vous dit vraiment la vérité</strong></span></li>
+        <li class="pain-item reveal reveal-delay-4"><span class="pain-num">05</span><span class="pain-text">Vous portez votre activité, votre famille, vos équipes — et vous avez du mal à <strong>poser votre propre cap, pour vous</strong></span></li>
+        <li class="pain-item reveal reveal-delay-5"><span class="pain-num">06</span><span class="pain-text">Vous sentez une <strong>dérive entre qui vous êtes et la personne que vous incarnez chaque jour</strong> dans votre cabinet, votre boutique, votre bureau</span></li>
       </ul>
     </div>
   </div>
@@ -738,18 +800,18 @@
     <div class="testimonials-grid">
       <div class="testimonial-card reveal">
         <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
-        <p class="testimonial-text">"Avant de rencontrer Guillaume, je dirigeais mon entreprise en mode pompier. 6 mois plus tard, j'ai reconstitué mon CODIR, délégué 40% de mes responsabilités opérationnelles, et signé notre plus gros contrat. Ce qui a changé ? Ma manière d'être dirigeant, pas ma manière de travailler."</p>
+        <p class="testimonial-text">"Je gère un cabinet de kinésithérapie avec 4 praticiens depuis 8 ans. Techniquement, je m'en sortais. Humainement et stratégiquement, je me perdais. Guillaume m'a aidé à sortir la tête du guidon, à repositionner mes relations avec mon équipe, et à redonner un cap à mon cabinet. Aujourd'hui je travaille moins, et j'aime à nouveau ce que je fais."</p>
         <div class="testimonial-author">
-          <div class="testimonial-avatar">TM</div>
-          <div><div class="testimonial-name">Thomas M.</div><div class="testimonial-role">DG, ETI du BTP — 120 collaborateurs, Lyon</div></div>
+          <div class="testimonial-avatar">JM</div>
+          <div><div class="testimonial-name">Julien M.</div><div class="testimonial-role">Kinésithérapeute, cabinet 4 praticiens — Bordeaux</div></div>
         </div>
       </div>
       <div class="testimonial-card reveal reveal-delay-1">
         <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
-        <p class="testimonial-text">"Je ne venais pas avec un enjeu business. Je venais avec une question plus fondamentale : qui suis-je vraiment, en dehors de ce que j'accomplis ? Six mois avec Guillaume ont transformé ma relation à moi-même, et par ricochet, mes relations les plus importantes."</p>
+        <p class="testimonial-text">"Avocate associée depuis 12 ans, j'excellais dans mon droit mais je me noyais dans ma structure. La gestion des associés, le développement client, les décisions stratégiques — personne ne m'avait préparé à ça. Guillaume m'a donné des outils concrets et un regard extérieur impitoyable. En 6 mois, j'ai restructuré mon cabinet et, surtout, je me suis restructurée moi."</p>
         <div class="testimonial-author">
           <div class="testimonial-avatar">SC</div>
-          <div><div class="testimonial-name">Sophie C.</div><div class="testimonial-role">Directrice de programme — reconversion professionnelle, Paris</div></div>
+          <div><div class="testimonial-name">Sophie C.</div><div class="testimonial-role">Avocate associée, cabinet 8 personnes — Lyon</div></div>
         </div>
       </div>
       <div class="testimonial-card reveal reveal-delay-2">
@@ -781,14 +843,14 @@
           <h3 class="fit-card-title">Ce programme est fait pour vous si</h3>
         </div>
         <ul class="fit-list yes">
-          <li>Vous êtes <strong>PDG, DG, fondateur, directeur associé</strong> — ou toute personne exerçant un leadership dans sa vie professionnelle ou personnelle</li>
-          <li>Vous traversez une <strong>période charnière</strong> — croissance, cession, reconversion, succession, transition de vie</li>
+          <li>Vous êtes <strong>dirigeant d'entreprise, professionnel libéral</strong> (dentiste, avocat, kiné, ostéopathe, médecin, architecte…), <strong>commerçant, artisan ou fondateur</strong> — et votre activité repose en grande partie sur vous</li>
+          <li>Vous traversez une <strong>période charnière</strong> — croissance, ouverture d'un second site, cession, succession, reconversion, transition de vie</li>
           <li>Vous êtes prêt à <strong>vous remettre en question avec exigence</strong>, pas avec complaisance</li>
           <li>Vous <strong>investissez déjà</strong> dans votre développement : lectures, formations, entourage de qualité</li>
           <li>Vous comprenez que le <strong>ROI d'un coaching se mesure en années</strong>, pas en semaines</li>
         </ul>
         <div class="fit-note">
-          <strong>Coaching personnel inclus :</strong> la méthode APEX travaille l'individu dans sa globalité — sa dimension professionnelle autant que personnelle. Ce programme s'adresse à quiconque aspire à vivre et à agir avec plus d'alignement, d'impact et de sens.
+          <strong>Peu importe votre secteur :</strong> que vous gériez un cabinet médical, une étude juridique, un commerce ou une PME, les enjeux sont les mêmes — diriger des personnes, prendre des décisions seul, et rester aligné avec soi-même. C'est précisément ce que travaille la méthode APEX.
         </div>
       </div>
       <div class="fit-card reveal reveal-delay-1">
@@ -884,8 +946,8 @@
             <div class="form-group"><label for="nom">Nom *</label><input type="text" id="nom" name="nom" required placeholder="Votre nom"></div>
             <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required placeholder="vous@domaine.com"></div>
             <div class="form-group"><label for="tel">Téléphone *</label><input type="tel" id="tel" name="tel" required placeholder="+33 6 00 00 00 00"></div>
-            <div class="form-group full"><label for="fonction">Votre fonction et secteur d'activité *</label><input type="text" id="fonction" name="fonction" required placeholder="Ex : PDG — Industrie / Directrice — Reconversion professionnelle"></div>
-            <div class="form-group"><label for="taille">Contexte *</label><select id="taille" name="taille" required><option value="" disabled selected>Votre situation</option><option value="dirigeant-pme">Dirigeant PME (10–100 pers.)</option><option value="dirigeant-eti">Dirigeant ETI (100–500 pers.)</option><option value="fondateur">Fondateur / entrepreneur</option><option value="cadre-dirigeant">Cadre dirigeant</option><option value="transition">Transition / reconversion</option><option value="perso">Développement personnel</option></select></div>
+            <div class="form-group full"><label for="fonction">Votre fonction et secteur d'activité *</label><input type="text" id="fonction" name="fonction" required placeholder="Ex : Dentiste — cabinet 3 praticiens / Avocat associé / Dirigeant PME"></div>
+            <div class="form-group"><label for="taille">Contexte *</label><select id="taille" name="taille" required><option value="" disabled selected>Votre situation</option><option value="liberal-sante">Professionnel de santé (dentiste, kiné, ostéo…)</option><option value="liberal-juridique">Profession juridique / conseil (avocat, notaire…)</option><option value="liberal-autre">Autre profession libérale</option><option value="commercant">Commerçant / artisan / restaurateur</option><option value="dirigeant-pme">Dirigeant PME (10–100 pers.)</option><option value="dirigeant-eti">Dirigeant ETI (100–500 pers.)</option><option value="fondateur">Fondateur / entrepreneur</option><option value="cadre-dirigeant">Cadre dirigeant</option><option value="transition">Transition / reconversion</option><option value="perso">Développement personnel</option></select></div>
             <div class="form-group"><label for="coaching">Avez-vous déjà réalisé un coaching ?</label><select id="coaching" name="coaching"><option value="" disabled selected>Sélectionner</option><option value="non">Non, c'est une première</option><option value="oui">Oui, coaching individuel</option><option value="oui-collectif">Oui, coaching collectif</option></select></div>
             <div class="form-group full"><label for="defi">Quel est le défi principal que vous traversez ? *</label><textarea id="defi" name="defi" required placeholder="En 3 à 5 lignes, décrivez votre contexte et ce qui vous amène à considérer un accompagnement..."></textarea></div>
             <div class="form-group full"><label for="source">Comment avez-vous entendu parler de Guillaume ORTIN ?</label><select id="source" name="source"><option value="" disabled selected>Sélectionner</option><option value="linkedin">LinkedIn</option><option value="recommandation">Recommandation</option><option value="google">Recherche Google</option><option value="evenement">Événement / conférence</option><option value="presse">Presse / podcast</option><option value="autre">Autre</option></select></div>
