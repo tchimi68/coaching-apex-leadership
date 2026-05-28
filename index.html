@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="v1">
+<html lang="fr" data-theme="v5">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1120,11 +1120,11 @@
 <!-- ─── THEME CHOOSER ─── -->
 <div id="themeBar">
   <span class="tb-label">Choisir un style</span>
-  <button class="tb-btn active" data-t="v1" onclick="setTheme('v1')"><span class="tb-dot" style="background:#C9A84C"></span><span class="tb-name">Noir & Or</span></button>
+  <button class="tb-btn" data-t="v1" onclick="setTheme('v1')"><span class="tb-dot" style="background:#C9A84C"></span><span class="tb-name">Noir & Or</span></button>
   <button class="tb-btn" data-t="v2" onclick="setTheme('v2')"><span class="tb-dot" style="background:#8AAEC8"></span><span class="tb-name">Marine & Argent</span></button>
   <button class="tb-btn" data-t="v3" onclick="setTheme('v3')"><span class="tb-dot" style="background:#C97830"></span><span class="tb-name">Forêt & Ambre</span></button>
   <button class="tb-btn" data-t="v4" onclick="setTheme('v4')"><span class="tb-dot" style="background:#A06040"></span><span class="tb-name">Béton & Cuivre</span></button>
-  <button class="tb-btn" data-t="v5" onclick="setTheme('v5')"><span class="tb-dot" style="background:#8B1A2C"></span><span class="tb-name">Ivoire & Bordeaux</span></button>
+  <button class="tb-btn active" data-t="v5" onclick="setTheme('v5')"><span class="tb-dot" style="background:#8B1A2C"></span><span class="tb-name">Ivoire & Bordeaux</span></button>
 </div>
 
 <script>
@@ -1139,8 +1139,8 @@
     history.replaceState({}, '', url);
   }
   // Init from URL
-  const urlTheme = new URLSearchParams(window.location.search).get('theme');
-  if (urlTheme) setTheme(urlTheme);
+  const urlTheme = new URLSearchParams(window.location.search).get('theme') || 'v5';
+  setTheme(urlTheme);
 
   // ─── NAV ───
   const nav = document.getElementById('nav');
