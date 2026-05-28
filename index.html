@@ -1,0 +1,2158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guillaume ORTIN — Coach Exécutif | Méthode APEX Leadership™</title>
+  <meta name="description" content="Coaching exécutif individuel pour PDG, DG et fondateurs ambitieux. Méthode APEX Leadership™ — 6 mois de transformation. Guillaume ORTIN, coach certifié ICF PCC, Annecy.">
+  <meta name="keywords" content="coaching de dirigeants, coaching exécutif, coach PDG, leadership de dirigeant, coaching stratégique, transformation managériale, coaching ICF dirigeant, Annecy">
+  <meta property="og:title" content="Guillaume ORTIN — Coach Exécutif & Stratège de Dirigeants">
+  <meta property="og:description" content="Programme de coaching exécutif individuel sur 6 mois pour PDG, DG et fondateurs ambitieux — Méthode APEX Leadership™">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0A0A0F;
+      --bg-alt: #1B2A4A;
+      --bg-card: #12151E;
+      --bg-card-hover: #161A26;
+      --gold: #C9A84C;
+      --gold-light: #DFB96A;
+      --gold-dim: rgba(201, 168, 76, 0.15);
+      --text: #F0EDE6;
+      --text-muted: #A8A8B0;
+      --border: rgba(201, 168, 76, 0.2);
+      --border-subtle: rgba(240, 237, 230, 0.08);
+      --f-display: 'Cormorant Garamond', Georgia, serif;
+      --f-body: 'DM Sans', system-ui, sans-serif;
+      --radius: 4px;
+      --max-w: 1160px;
+      --section-pad: clamp(80px, 10vw, 140px);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--f-body);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::selection { background: var(--gold-dim); color: var(--gold-light); }
+
+    img { max-width: 100%; display: block; }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── UTILITIES ─── */
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 clamp(20px, 5vw, 60px); }
+    .gold { color: var(--gold); }
+    .divider { width: 60px; height: 1px; background: var(--gold); margin: 28px 0; }
+    .divider--center { margin: 28px auto; }
+    .text-center { text-align: center; }
+    .section-label {
+      font-family: var(--f-body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: var(--f-display);
+      font-size: clamp(34px, 5vw, 58px);
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    .section-subtitle {
+      font-size: clamp(16px, 2vw, 19px);
+      color: var(--text-muted);
+      font-weight: 300;
+      max-width: 640px;
+      line-height: 1.7;
+    }
+
+    /* ─── GOLD LINE SEPARATOR ─── */
+    .gold-line {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+      opacity: 0.3;
+    }
+
+    /* ─── NAV ─── */
+    #nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 20px 0;
+      transition: background 0.4s, padding 0.4s, box-shadow 0.4s;
+    }
+    #nav.scrolled {
+      background: rgba(10, 10, 15, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 14px 0;
+      box-shadow: 0 1px 0 var(--border);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--f-display);
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--text);
+      line-height: 1;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bg) !important;
+      background: var(--gold);
+      padding: 10px 24px;
+      border-radius: var(--radius);
+      transition: background 0.2s, transform 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+
+    .nav-burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-burger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--text);
+      transition: 0.3s;
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 70% 50%, rgba(27, 42, 74, 0.5) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(201, 168, 76, 0.06) 0%, transparent 60%),
+        var(--bg);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 80px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+    .hero-title {
+      font-family: var(--f-display);
+      font-size: clamp(44px, 6.5vw, 84px);
+      font-weight: 500;
+      line-height: 1.08;
+      margin-bottom: 28px;
+      letter-spacing: -0.01em;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero-sub {
+      font-size: clamp(16px, 2vw, 19px);
+      color: var(--text-muted);
+      font-weight: 300;
+      max-width: 520px;
+      margin-bottom: 48px;
+      line-height: 1.7;
+    }
+    .hero-sub strong { color: var(--text); font-weight: 500; }
+    .hero-actions { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: #0A0A0F;
+      font-family: var(--f-body);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 18px 40px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(201, 168, 76, 0.25);
+    }
+    .btn-primary svg { flex-shrink: 0; }
+    .hero-note {
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero-note::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: var(--text-muted);
+    }
+    .hero-badges {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border-subtle);
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* Hero portrait */
+    .hero-portrait {
+      position: relative;
+    }
+    .portrait-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3/4;
+      max-height: 580px;
+      background: var(--bg-card);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .portrait-frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(201,168,76,0.08) 0%, transparent 50%),
+        linear-gradient(to top, rgba(10,10,15,0.6) 0%, transparent 50%);
+      z-index: 2;
+    }
+    .portrait-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+    .portrait-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, #12151E 0%, #1B2A4A 100%);
+    }
+    .portrait-initials {
+      font-family: var(--f-display);
+      font-size: 120px;
+      font-weight: 300;
+      color: rgba(201, 168, 76, 0.15);
+      line-height: 1;
+      user-select: none;
+    }
+    .portrait-border {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      right: -16px;
+      bottom: -16px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .portrait-caption {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+      z-index: 3;
+    }
+    .portrait-name {
+      font-family: var(--f-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .portrait-title-small {
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ─── PROBLEM ─── */
+    #problem {
+      padding: var(--section-pad) 0;
+      background: var(--bg-alt);
+      position: relative;
+    }
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .pain-list { list-style: none; margin-top: 48px; display: flex; flex-direction: column; gap: 24px; }
+    .pain-item {
+      display: flex;
+      gap: 20px;
+      padding: 24px;
+      background: rgba(10, 10, 15, 0.4);
+      border-left: 2px solid var(--border);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .pain-item:hover {
+      border-left-color: var(--gold);
+      background: rgba(10, 10, 15, 0.6);
+    }
+    .pain-num {
+      font-family: var(--f-display);
+      font-size: 32px;
+      font-weight: 300;
+      color: var(--gold);
+      opacity: 0.5;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: -4px;
+    }
+    .pain-text {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .pain-text strong { color: var(--text); font-weight: 500; }
+
+    /* ─── PROMISE ─── */
+    #promise {
+      padding: var(--section-pad) 0;
+      background: var(--bg);
+    }
+    .promise-header { text-align: center; margin-bottom: 72px; }
+    .promise-header .section-subtitle { margin: 0 auto; }
+    .promise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .promise-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .promise-card:hover {
+      border-color: var(--border);
+      transform: translateY(-4px);
+    }
+    .promise-icon {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      margin-bottom: 24px;
+      color: var(--gold);
+    }
+    .promise-num {
+      font-family: var(--f-display);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .promise-title {
+      font-family: var(--f-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+    .promise-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ─── APEX METHOD ─── */
+    #method {
+      padding: var(--section-pad) 0;
+      background: var(--bg-alt);
+      position: relative;
+    }
+    .method-header { margin-bottom: 80px; }
+    .method-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 32px;
+      line-height: 1.5;
+    }
+    .method-badge::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .apex-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+    .apex-pillar {
+      background: var(--bg-card);
+      padding: 48px 36px;
+      position: relative;
+      transition: background 0.3s;
+    }
+    .apex-pillar:hover { background: var(--bg-card-hover); }
+    .apex-letter {
+      font-family: var(--f-display);
+      font-size: 100px;
+      font-weight: 700;
+      color: var(--gold);
+      opacity: 0.08;
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .apex-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .apex-name {
+      font-family: var(--f-display);
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .apex-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+    .apex-tool {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 14px 16px;
+      background: rgba(201, 168, 76, 0.06);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .apex-tool-icon { color: var(--gold); flex-shrink: 0; margin-top: 1px; }
+    .apex-tool-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+    }
+    .apex-tool-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+      line-height: 1.5;
+    }
+
+    /* ─── PROGRAM ─── */
+    #program {
+      padding: var(--section-pad) 0;
+      background: var(--bg);
+    }
+    .program-header { text-align: center; margin-bottom: 72px; }
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .program-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      transition: border-color 0.3s;
+    }
+    .program-item:hover { border-color: var(--border); }
+    .program-item-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gold-dim);
+      border-radius: 50%;
+      flex-shrink: 0;
+      color: var(--gold);
+    }
+    .program-item-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .program-item-value {
+      font-family: var(--f-display);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.3;
+    }
+    .program-item-note {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .program-alert {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 28px 36px;
+      background: var(--gold-dim);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      flex-wrap: wrap;
+    }
+    .program-alert-text {
+      font-family: var(--f-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .program-alert-sub {
+      font-size: 14px;
+      color: var(--gold);
+      margin-top: 4px;
+    }
+    .program-alert .btn-primary { flex-shrink: 0; }
+
+    /* ─── ABOUT ─── */
+    #about {
+      padding: var(--section-pad) 0;
+      background: var(--bg-alt);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .about-portrait {
+      position: relative;
+    }
+    .about-portrait-frame {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--bg-card);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .about-portrait-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .about-portrait-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, #12151E 0%, #1B2A4A 100%);
+    }
+    .about-portrait-placeholder .portrait-initials {
+      font-size: 140px;
+    }
+    .about-portrait-border {
+      position: absolute;
+      top: -16px;
+      left: -16px;
+      right: 16px;
+      bottom: 16px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .about-stat {
+      background: rgba(10, 10, 15, 0.5);
+      padding: 20px;
+      border-radius: var(--radius);
+      text-align: center;
+    }
+    .about-stat-num {
+      font-family: var(--f-display);
+      font-size: 36px;
+      font-weight: 500;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .about-stat-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    .about-content { padding-top: 8px; }
+    .about-bio {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .about-bio-section {}
+    .about-bio-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .about-bio p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .about-bio p strong { color: var(--text); font-weight: 500; }
+    .about-quote {
+      margin-top: 40px;
+      padding: 32px 36px;
+      border-left: 2px solid var(--gold);
+      background: rgba(201, 168, 76, 0.04);
+    }
+    .about-quote blockquote {
+      font-family: var(--f-display);
+      font-size: clamp(20px, 2.5vw, 26px);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .about-quote cite {
+      display: block;
+      margin-top: 16px;
+      font-size: 13px;
+      font-style: normal;
+      color: var(--gold);
+      letter-spacing: 0.06em;
+    }
+
+    /* ─── TESTIMONIALS ─── */
+    #testimonials {
+      padding: var(--section-pad) 0;
+      background: var(--bg);
+    }
+    .testimonials-header { text-align: center; margin-bottom: 72px; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .testimonial-card:hover {
+      border-color: var(--border);
+      transform: translateY(-4px);
+    }
+    .stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 28px;
+    }
+    .star {
+      width: 14px;
+      height: 14px;
+      background: var(--gold);
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+    .testimonial-text {
+      font-family: var(--f-display);
+      font-size: 17px;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.7;
+      flex: 1;
+      margin-bottom: 32px;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--bg-alt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--f-display);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--gold);
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .testimonial-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .testimonial-role {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* ─── FIT ─── */
+    #fit {
+      padding: var(--section-pad) 0;
+      background: var(--bg-alt);
+    }
+    .fit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .fit-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 48px 44px;
+    }
+    .fit-card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .fit-card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .fit-card-icon.yes { background: rgba(201, 168, 76, 0.12); color: var(--gold); }
+    .fit-card-icon.no { background: rgba(255, 80, 80, 0.08); color: #ff6060; }
+    .fit-card-title {
+      font-family: var(--f-display);
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .fit-list { list-style: none; display: flex; flex-direction: column; gap: 18px; }
+    .fit-list li {
+      display: flex;
+      gap: 14px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .fit-list li::before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .fit-list.yes li::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C9A84C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    }
+    .fit-list.no li::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff6060' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
+    }
+    .fit-list li strong { color: var(--text); font-weight: 500; }
+
+    /* ─── INVESTMENT ─── */
+    #investment {
+      padding: var(--section-pad) 0;
+      background: var(--bg);
+    }
+    .investment-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .investment-price {
+      font-family: var(--f-display);
+      font-size: clamp(64px, 10vw, 100px);
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin: 40px 0 8px;
+    }
+    .investment-price-label {
+      font-size: 14px;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .investment-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 56px 0;
+    }
+    .investment-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .investment-card-icon { color: var(--gold); margin-bottom: 16px; }
+    .investment-card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .investment-card-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .investment-guarantee {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 32px 36px;
+      background: var(--gold-dim);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-align: left;
+    }
+    .investment-guarantee-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0A0A0F;
+      flex-shrink: 0;
+    }
+    .investment-guarantee-title {
+      font-family: var(--f-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .investment-guarantee-text {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ─── PROCESS ─── */
+    #process {
+      padding: var(--section-pad) 0;
+      background: var(--bg-alt);
+    }
+    .process-header { text-align: center; margin-bottom: 80px; }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: calc(12.5%);
+      right: calc(12.5%);
+      height: 1px;
+      background: var(--border);
+    }
+    .process-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 24px;
+      position: relative;
+    }
+    .process-step-num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--f-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--gold);
+      margin-bottom: 28px;
+      position: relative;
+      z-index: 1;
+    }
+    .process-step-title {
+      font-family: var(--f-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .process-step-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+    .process-note {
+      text-align: center;
+      margin-top: 64px;
+      font-size: 15px;
+      color: var(--text-muted);
+      font-style: italic;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ─── FORM ─── */
+    #candidature {
+      padding: var(--section-pad) 0;
+      background: var(--bg);
+    }
+    .form-header { text-align: center; margin-bottom: 64px; }
+    .form-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: clamp(40px, 5vw, 72px);
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-group.full { grid-column: 1 / -1; }
+    label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    input, select, textarea {
+      width: 100%;
+      background: rgba(240, 237, 230, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: var(--f-body);
+      font-size: 15px;
+      padding: 14px 18px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--gold);
+    }
+    select { cursor: pointer; }
+    select option { background: var(--bg-card); }
+    textarea { resize: vertical; min-height: 120px; }
+    .form-submit-wrap { margin-top: 36px; text-align: center; }
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--gold);
+      color: #0A0A0F;
+      font-family: var(--f-body);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 18px 56px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-submit:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(201, 168, 76, 0.25);
+    }
+    .form-legal {
+      margin-top: 20px;
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    /* Success message */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 48px 0;
+    }
+    .form-success.visible { display: block; }
+    .form-success-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--gold-dim);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      margin: 0 auto 28px;
+    }
+    .form-success h3 {
+      font-family: var(--f-display);
+      font-size: 32px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .form-success p {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 400px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ─── FOOTER ─── */
+    #footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-subtle);
+      padding: 60px 0 40px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 48px;
+      align-items: start;
+      margin-bottom: 48px;
+    }
+    .footer-logo {
+      font-family: var(--f-display);
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .footer-logo span { color: var(--gold); }
+    .footer-tagline {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 24px;
+    }
+    .footer-certs {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .footer-cert {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border: 1px solid var(--border-subtle);
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+    .footer-cert::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+    }
+    .footer-nav {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .footer-nav a {
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: var(--text); }
+    .footer-social {
+      display: flex;
+      gap: 14px;
+    }
+    .social-link {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--border-subtle);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .social-link:hover { border-color: var(--gold); color: var(--gold); }
+    .footer-bottom {
+      padding-top: 32px;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .footer-legal {
+      display: flex;
+      gap: 20px;
+    }
+    .footer-legal a {
+      font-size: 12px;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .footer-legal a:hover { color: var(--text); }
+
+    /* ─── SCROLL INDICATOR ─── */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--gold);
+      z-index: 200;
+      transition: width 0.1s;
+    }
+
+    /* ─── ANIMATIONS (hidden until JS reveals) ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .apex-grid { grid-template-columns: repeat(2, 1fr); }
+      .program-grid { grid-template-columns: repeat(2, 1fr); }
+      .promise-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr 1fr; }
+      .testimonials-grid .testimonial-card:last-child { display: none; }
+      .about-grid { grid-template-columns: 340px 1fr; gap: 60px; }
+      .investment-cards { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(10, 10, 15, 0.98);
+        backdrop-filter: blur(16px);
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        z-index: 90;
+      }
+      .nav-links.open a {
+        font-size: 20px;
+        letter-spacing: 0.12em;
+      }
+      .nav-burger { display: flex; z-index: 101; }
+      .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+      .nav-burger.open span:nth-child(2) { opacity: 0; }
+      .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+      .hero-portrait { order: -1; max-width: 320px; margin: 0 auto; }
+      .portrait-frame { aspect-ratio: 4/5; }
+      .hero-title { font-size: clamp(38px, 10vw, 56px); }
+      .hero-badges { gap: 16px; }
+
+      .problem-grid { grid-template-columns: 1fr; gap: 48px; }
+      .promise-grid { grid-template-columns: 1fr; }
+      .apex-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .testimonials-grid .testimonial-card:last-child { display: flex; }
+      .fit-grid { grid-template-columns: 1fr; }
+      .investment-cards { grid-template-columns: 1fr 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .process-steps::before { display: none; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-portrait { max-width: 320px; }
+      .about-portrait-border { display: none; }
+      .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+      .footer-links { align-items: flex-start; }
+      .footer-nav { justify-content: flex-start; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .hero-actions { flex-direction: column; align-items: flex-start; gap: 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .investment-cards { grid-template-columns: 1fr; }
+      .about-stats { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ─── NAV ─── -->
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Guillaume <span>ORTIN</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#method">La méthode</a></li>
+        <li><a href="#program">Programme</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="#candidature" class="nav-cta">Candidater</a></li>
+      </ul>
+      <div class="nav-burger" id="navBurger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal">Coach Exécutif &amp; Stratège de Dirigeants — Annecy &amp; Visio</p>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Vous dirigez<br>une entreprise.<br><em>Qui vous dirige,<br>vous&nbsp;?</em>
+        </h1>
+        <p class="hero-sub reveal reveal-delay-2">
+          Programme de coaching exécutif individuel sur 6 mois pour PDG, DG et fondateurs ambitieux.<br>
+          <strong>Méthode APEX Leadership™</strong>
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="#candidature" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Candidater au programme
+          </a>
+          <span class="hero-note">8 places maximum simultanément</span>
+        </div>
+        <div class="hero-badges reveal reveal-delay-4">
+          <div class="badge"><span class="badge-dot"></span>Certifié ICF PCC</div>
+          <div class="badge"><span class="badge-dot"></span>20 ans d'entrepreneuriat</div>
+          <div class="badge"><span class="badge-dot"></span>+150 dirigeants accompagnés</div>
+        </div>
+      </div>
+      <div class="hero-portrait reveal reveal-delay-2">
+        <div class="portrait-frame">
+          <div class="portrait-placeholder">
+            <div class="portrait-initials">GO</div>
+          </div>
+          <div class="portrait-caption">
+            <div class="portrait-name">Guillaume Ortin</div>
+            <div class="portrait-title-small">Coach Exécutif · ICF PCC</div>
+          </div>
+        </div>
+        <div class="portrait-border"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ─── PROBLEM ─── -->
+<section id="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div>
+        <p class="section-label reveal">Le constat</p>
+        <h2 class="section-title reveal reveal-delay-1">Ce que vivent les dirigeants qui nous contactent</h2>
+        <div class="divider reveal reveal-delay-2"></div>
+        <p class="section-subtitle reveal reveal-delay-2">
+          Vous avez bâti quelque chose. Mais quelque chose, dans votre manière de diriger, s'est mis à coûter cher.
+        </p>
+      </div>
+      <ul class="pain-list">
+        <li class="pain-item reveal">
+          <span class="pain-num">01</span>
+          <span class="pain-text">Vous avez construit une belle structure, mais vous vous sentez <strong>seul face aux décisions qui comptent vraiment</strong></span>
+        </li>
+        <li class="pain-item reveal reveal-delay-1">
+          <span class="pain-num">02</span>
+          <span class="pain-text">Votre CODIR fonctionne, mais vous sentez que <strong>vous ne tirez pas le meilleur de vos équipes dirigeantes</strong></span>
+        </li>
+        <li class="pain-item reveal reveal-delay-2">
+          <span class="pain-num">03</span>
+          <span class="pain-text">Vous avez réussi en exécutant — mais aujourd'hui, <strong>votre entreprise a besoin d'un leader-visionnaire</strong>, pas d'un super-opérationnel</span>
+        </li>
+        <li class="pain-item reveal reveal-delay-3">
+          <span class="pain-num">04</span>
+          <span class="pain-text">Vous êtes entouré de gens qui vous respectent mais <strong>personne ne vous dit la vérité</strong></span>
+        </li>
+        <li class="pain-item reveal reveal-delay-4">
+          <span class="pain-num">05</span>
+          <span class="pain-text">Vous portez l'entreprise, la famille, les associés — et vous avez du mal à <strong>poser votre propre cap</strong></span>
+        </li>
+        <li class="pain-item reveal reveal-delay-5">
+          <span class="pain-num">06</span>
+          <span class="pain-text">Vous sentez une <strong>dérive entre qui vous êtes et le dirigeant que vous incarnez au quotidien</strong></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ─── PROMISE ─── -->
+<section id="promise">
+  <div class="container">
+    <div class="promise-header">
+      <p class="section-label reveal">Résultats</p>
+      <h2 class="section-title reveal reveal-delay-1">Ce que vous allez obtenir — concrètement</h2>
+      <div class="divider divider--center reveal reveal-delay-2"></div>
+      <p class="section-subtitle reveal reveal-delay-2">Six transformations mesurables, pas des promesses abstraites.</p>
+    </div>
+    <div class="promise-grid">
+      <div class="promise-card reveal">
+        <div class="promise-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <p class="promise-num">01</p>
+        <h3 class="promise-title">Une identité de dirigeant cristallisée</h3>
+        <p class="promise-desc">Vous savez exactement qui vous êtes, comment vous décidez, et ce que vous voulez laisser comme héritage.</p>
+      </div>
+      <div class="promise-card reveal reveal-delay-1">
+        <div class="promise-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <p class="promise-num">02</p>
+        <h3 class="promise-title">Un leadership reconnu par vos équipes</h3>
+        <p class="promise-desc">Sans forcer, sans éclats, sans épuisement. Parce que l'autorité réelle ne se décrète pas — elle se dégage.</p>
+      </div>
+      <div class="promise-card reveal reveal-delay-2">
+        <div class="promise-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <p class="promise-num">03</p>
+        <h3 class="promise-title">Des décisions plus rapides et assumées</h3>
+        <p class="promise-desc">Fini la paralysie analytique ou la dépendance aux avis extérieurs. Vous décidez avec clarté et vous assumez.</p>
+      </div>
+      <div class="promise-card reveal reveal-delay-1">
+        <div class="promise-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <p class="promise-num">04</p>
+        <h3 class="promise-title">Un CODIR transformé dans son fonctionnement</h3>
+        <p class="promise-desc">Par votre seule évolution. Quand le dirigeant change, le collectif suit — toujours.</p>
+      </div>
+      <div class="promise-card reveal reveal-delay-2">
+        <div class="promise-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+        </div>
+        <p class="promise-num">05</p>
+        <h3 class="promise-title">Une vision à 5 ans clarifiée</h3>
+        <p class="promise-desc">Votre Legacy Statement™, ancre de toutes vos priorités stratégiques et personnelles.</p>
+      </div>
+      <div class="promise-card reveal reveal-delay-3">
+        <div class="promise-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <p class="promise-num">06</p>
+        <h3 class="promise-title">Une énergie de dirigeant restaurée</h3>
+        <p class="promise-desc">Performance sans sacrifice de vous-même. Parce que durer est aussi une stratégie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ─── APEX METHOD ─── -->
+<section id="method">
+  <div class="container">
+    <div class="method-header">
+      <p class="section-label reveal">Méthode propriétaire</p>
+      <h2 class="section-title reveal reveal-delay-1">La méthode APEX Leadership™<br>20 ans distillés en 6 mois</h2>
+      <div class="divider reveal reveal-delay-2"></div>
+      <p class="section-subtitle reveal reveal-delay-2">
+        Accelerated Performance &amp; Executive Xcellence — une architecture de transformation en 4 piliers, séquencés sur la durée du programme.
+      </p>
+      <div class="method-badge reveal reveal-delay-3">
+        Développée à partir des neurosciences appliquées, de l'Analyse Transactionnelle, du PCM® et de 20 ans de terrain entrepreneurial
+      </div>
+    </div>
+    <div class="apex-grid">
+      <div class="apex-pillar reveal">
+        <span class="apex-letter">A</span>
+        <p class="apex-label">Pilier A</p>
+        <h3 class="apex-name">Ancrage Identitaire du Dirigeant</h3>
+        <p class="apex-desc">Identifier et consolider le "Moi-Dirigeant" : valeurs profondes, style naturel de leadership, zones de force authentiques versus postures compensatoires épuisantes.</p>
+        <div class="apex-tool">
+          <svg class="apex-tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <div>
+            <div class="apex-tool-label">Wheel of Authority™</div>
+            <div class="apex-tool-desc">Radar visuel sur 12 dimensions du leadership exécutif — outil exclusif d'évaluation et de suivi</div>
+          </div>
+        </div>
+      </div>
+      <div class="apex-pillar reveal reveal-delay-1">
+        <span class="apex-letter">P</span>
+        <p class="apex-label">Pilier P</p>
+        <h3 class="apex-name">Performance sous Pression</h3>
+        <p class="apex-desc">Développer la régulation émotionnelle et cognitive en situation de haute intensité : crise, fusion-acquisition, conflit actionnaire, pivot stratégique.</p>
+        <div class="apex-tool">
+          <svg class="apex-tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          <div>
+            <div class="apex-tool-label">Cohérence Cardiaque Avancée + WOOP</div>
+            <div class="apex-tool-desc">Protocoles issus des neurosciences (NeuroLeadership Institute, NYU) adaptés aux dirigeants</div>
+          </div>
+        </div>
+      </div>
+      <div class="apex-pillar reveal reveal-delay-2">
+        <span class="apex-letter">E</span>
+        <p class="apex-label">Pilier E</p>
+        <h3 class="apex-name">Écosystème &amp; Influence</h3>
+        <p class="apex-desc">Cartographier et optimiser les relations stratégiques : CODIR, CA, investisseurs, clients-clés, partenaires. Travailler la présence exécutive et l'influence non-coercitive.</p>
+        <div class="apex-tool">
+          <svg class="apex-tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          <div>
+            <div class="apex-tool-label">Stakeholder Map™</div>
+            <div class="apex-tool-desc">Cartographie dynamique de votre écosystème d'influence — mise à jour en continu tout au long du programme</div>
+          </div>
+        </div>
+      </div>
+      <div class="apex-pillar reveal reveal-delay-3">
+        <span class="apex-letter">X</span>
+        <p class="apex-label">Pilier X</p>
+        <h3 class="apex-name">eXécution &amp; Vision Long Terme</h3>
+        <p class="apex-desc">Construire une feuille de route de transformation personnelle sur 90 jours, articulée à la stratégie de l'entreprise. Définir les indicateurs de leadership, pas seulement de performance business.</p>
+        <div class="apex-tool">
+          <svg class="apex-tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <div>
+            <div class="apex-tool-label">Legacy Statement™</div>
+            <div class="apex-tool-desc">Ce que le dirigeant veut incarner dans 5 ans — livrable de clôture du programme, ancre de toutes vos priorités</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ─── PROGRAM ─── -->
+<section id="program">
+  <div class="container">
+    <div class="program-header">
+      <p class="section-label reveal">Le programme</p>
+      <h2 class="section-title reveal reveal-delay-1">Ce que comprend votre accompagnement</h2>
+      <div class="divider divider--center reveal reveal-delay-2"></div>
+    </div>
+    <div class="program-grid">
+      <div class="program-item reveal">
+        <div class="program-item-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <p class="program-item-label">Durée</p>
+          <p class="program-item-value">6 mois</p>
+          <p class="program-item-note">Séquencé et progressif</p>
+        </div>
+      </div>
+      <div class="program-item reveal reveal-delay-1">
+        <div class="program-item-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div>
+          <p class="program-item-label">Séances individuelles</p>
+          <p class="program-item-value">12 séances de 90 min</p>
+          <p class="program-item-note">Visio ou présentiel Annecy</p>
+        </div>
+      </div>
+      <div class="program-item reveal reveal-delay-2">
+        <div class="program-item-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div>
+          <p class="program-item-label">Bilan diagnostique initial</p>
+          <p class="program-item-value">3 heures</p>
+          <p class="program-item-note">Entretien approfondi + tests PCM® + Wheel of Authority™</p>
+        </div>
+      </div>
+      <div class="program-item reveal">
+        <div class="program-item-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div>
+          <p class="program-item-label">Rapport de personnalité</p>
+          <p class="program-item-value">PDF 20 pages</p>
+          <p class="program-item-note">Livrable personnalisé post-diagnostic</p>
+        </div>
+      </div>
+      <div class="program-item reveal reveal-delay-1">
+        <div class="program-item-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div>
+          <p class="program-item-label">Espace client privé</p>
+          <p class="program-item-value">Accès plateforme</p>
+          <p class="program-item-note">Ressources, replays, outils exclusifs</p>
+        </div>
+      </div>
+      <div class="program-item reveal reveal-delay-2">
+        <div class="program-item-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.42a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.76-1.76a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <p class="program-item-label">Hotline WhatsApp</p>
+          <p class="program-item-value">Accès direct</p>
+          <p class="program-item-note">Réponse sous 72h entre les séances</p>
+        </div>
+      </div>
+    </div>
+    <div class="program-alert reveal">
+      <div>
+        <p class="program-alert-text">Programme limité à 8 dirigeants simultanément</p>
+        <p class="program-alert-sub">Prochaines places disponibles : septembre 2026</p>
+      </div>
+      <a href="#candidature" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Candidater maintenant
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-portrait reveal">
+        <div class="about-portrait-frame">
+          <div class="about-portrait-placeholder">
+            <div class="portrait-initials" style="font-size:140px;opacity:0.12;">GO</div>
+          </div>
+        </div>
+        <div class="about-portrait-border"></div>
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="about-stat-num">+150</div>
+            <div class="about-stat-label">Dirigeants accompagnés</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">20M€</div>
+            <div class="about-stat-label">Valeur business générée</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">6</div>
+            <div class="about-stat-label">Entreprises fondées</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">ICF</div>
+            <div class="about-stat-label">Certifié PCC</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-label reveal">Votre coach</p>
+        <h2 class="section-title reveal reveal-delay-1">Guillaume ORTIN</h2>
+        <div class="divider reveal reveal-delay-2"></div>
+        <div class="about-bio">
+          <div class="about-bio-section reveal reveal-delay-2">
+            <span class="about-bio-tag">Entrepreneur avant tout</span>
+            <p>Guillaume a <strong>fondé, développé et cédé plusieurs entreprises en 20 ans</strong>. Il ne vous parle pas de leadership depuis un livre — il le vit depuis deux décennies. Ses succès, ses erreurs, ses crises : tout cela nourrit la méthode APEX™.</p>
+          </div>
+          <div class="about-bio-section reveal reveal-delay-3">
+            <span class="about-bio-tag">Le tournant coaching</span>
+            <p>Après avoir lui-même traversé une <strong>crise de sens à la tête de son groupe en 2017</strong>, Guillaume découvre le coaching exécutif. Il se forme pendant 3 ans, obtient la certification ICF PCC — le standard international le plus exigeant — et décide de consacrer son expertise aux dirigeants qui vivent ce qu'il a vécu.</p>
+          </div>
+          <div class="about-bio-section reveal reveal-delay-4">
+            <span class="about-bio-tag">Formation &amp; méthodes</span>
+            <p>Formations avancées en <strong>neurosciences appliquées au leadership</strong> (NeuroLeadership Institute, New York), Analyse Transactionnelle, systémique organisationnelle (école de Palo Alto) et <strong>Process Communication Model®</strong>. Intervenant à l'École de Management de Grenoble.</p>
+          </div>
+        </div>
+        <div class="about-quote reveal reveal-delay-4">
+          <blockquote>
+            "Je ne vous dirai pas ce que vous voulez entendre. Je vous dirai ce qui vous fera avancer."
+          </blockquote>
+          <cite>— Guillaume ORTIN, Coach Exécutif ICF PCC</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ─── TESTIMONIALS ─── -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonials-header">
+      <p class="section-label reveal">Ils ont franchi le cap</p>
+      <h2 class="section-title reveal reveal-delay-1">Ce que disent les dirigeants accompagnés</h2>
+      <div class="divider divider--center reveal reveal-delay-2"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="testimonial-text">
+          "Avant de rencontrer Guillaume, je dirigeais mon entreprise en mode pompier. 6 mois plus tard, j'ai reconstitué mon CODIR, délégué 40% de mes responsabilités opérationnelles, et signé notre plus gros contrat. Ce qui a changé ? Ma manière d'être dirigeant, pas ma manière de travailler."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">TM</div>
+          <div>
+            <div class="testimonial-name">Thomas M.</div>
+            <div class="testimonial-role">DG, ETI du BTP — 120 collaborateurs, Lyon</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="testimonial-text">
+          "J'avais grandi avec l'entreprise depuis 12 ans. Mais je sentais que le dirigeant que j'étais devenu ne correspondait plus ni à ce que l'entreprise attendait, ni à ce que je voulais vraiment être. Avec Guillaume, j'ai reconstruit une vision à 5 ans que je défends maintenant devant mon CA avec une clarté que je n'avais jamais eue."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SC</div>
+          <div>
+            <div class="testimonial-name">Sophie C.</div>
+            <div class="testimonial-role">PDG, groupe de distribution — 200 collaborateurs, Bordeaux</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="testimonial-text">
+          "Investissement à 12 000 € qui m'a rendu facilement 10 fois sa valeur en 18 mois. Pas en gains directs — en décisions évitées, en conflits résolus avant d'exploser, en temps retrouvé. Guillaume est le seul interlocuteur qui m'a vraiment challengé. C'est rare à ce niveau."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AR</div>
+          <div>
+            <div class="testimonial-name">Antoine R.</div>
+            <div class="testimonial-role">Fondateur, SaaS B2B — 45 collaborateurs, Paris</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ─── FIT ─── -->
+<section id="fit">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:72px;">
+      <p class="section-label reveal">Alignement</p>
+      <h2 class="section-title reveal reveal-delay-1">Pour qui — et pas pour qui</h2>
+      <div class="divider divider--center reveal reveal-delay-2"></div>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-card reveal">
+        <div class="fit-card-header">
+          <div class="fit-card-icon yes">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 class="fit-card-title">Ce programme est fait pour vous si</h3>
+        </div>
+        <ul class="fit-list yes">
+          <li>Vous êtes <strong>PDG, DG, fondateur ou directeur associé</strong> d'une PME/ETI (10 à 500 personnes)</li>
+          <li>Vous traversez une <strong>période charnière</strong> — croissance, cession, restructuration, succession</li>
+          <li>Vous êtes prêt à <strong>vous remettre en question avec exigence</strong>, pas avec complaisance</li>
+          <li>Vous <strong>investissez déjà</strong> dans votre développement : lectures, formations, entourage de qualité</li>
+          <li>Vous comprenez que le <strong>ROI d'un coaching se mesure en années</strong>, pas en semaines</li>
+        </ul>
+      </div>
+      <div class="fit-card reveal reveal-delay-1">
+        <div class="fit-card-header">
+          <div class="fit-card-icon no">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </div>
+          <h3 class="fit-card-title">Ce programme n'est pas fait pour vous si</h3>
+        </div>
+        <ul class="fit-list no">
+          <li>Vous cherchez des <strong>solutions rapides à des problèmes opérationnels</strong></li>
+          <li>Vous pensez que <strong>le problème est surtout chez les autres</strong></li>
+          <li>Vous n'êtes pas prêt à <strong>dégager 2h tous les 15 jours</strong> pour vous-même</li>
+          <li>Vous avez besoin d'être <strong>convaincu que le développement a de la valeur</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ─── INVESTMENT ─── -->
+<section id="investment">
+  <div class="container">
+    <div class="investment-inner">
+      <p class="section-label reveal">Votre investissement</p>
+      <div class="investment-price reveal reveal-delay-1">12 000 <span style="font-size:0.5em;vertical-align:super;font-weight:400;">€</span></div>
+      <p class="investment-price-label reveal reveal-delay-2">HT — Programme complet 6 mois</p>
+      <div class="divider divider--center reveal reveal-delay-2"></div>
+      <div class="investment-cards reveal reveal-delay-3">
+        <div class="investment-card">
+          <div class="investment-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <p class="investment-card-title">Paiement en 3 fois</p>
+          <p class="investment-card-text">4 000 € × 3 échelons. Sans frais, sans intermédiaire.</p>
+        </div>
+        <div class="investment-card">
+          <div class="investment-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <p class="investment-card-title">Budget formation dirigeant</p>
+          <p class="investment-card-text">Prise en charge partielle possible via OPCO, plan PDC ou budget formation de l'entreprise (sous conditions).</p>
+        </div>
+        <div class="investment-card">
+          <div class="investment-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <p class="investment-card-title">Un doute ?</p>
+          <p class="investment-card-text">L'entretien de sélection de 30 min est sans engagement. C'est là que vous saurez si ce programme est pour vous.</p>
+        </div>
+      </div>
+      <div class="investment-guarantee reveal reveal-delay-4">
+        <div class="investment-guarantee-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <p class="investment-guarantee-title">Garantie 3 séances</p>
+          <p class="investment-guarantee-text">Si après les 3 premières séances vous estimez que ce programme n'est pas pour vous, nous nous séparons et vous êtes intégralement remboursé. Sans conditions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ─── PROCESS ─── -->
+<section id="process">
+  <div class="container">
+    <div class="process-header">
+      <p class="section-label reveal">Comment ça se passe ?</p>
+      <h2 class="section-title reveal reveal-delay-1">Le processus de candidature</h2>
+      <div class="divider divider--center reveal reveal-delay-2"></div>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="process-step-num">1</div>
+        <h3 class="process-step-title">Vous candidatez</h3>
+        <p class="process-step-desc">Formulaire de 8 questions pour comprendre votre contexte et vos enjeux de leadership actuels.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="process-step-num">2</div>
+        <h3 class="process-step-title">Entretien de sélection</h3>
+        <p class="process-step-desc">Appel de 30 min avec Guillaume pour vérifier l'alignement. Sans engagement, sans pression.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="process-step-num">3</div>
+        <h3 class="process-step-title">Diagnostic initial (3h)</h3>
+        <p class="process-step-desc">Si accepté : bilan complet, tests PCM®, Wheel of Authority™, rapport personnalisé 20 pages.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="process-step-num">4</div>
+        <h3 class="process-step-title">Démarrage du programme</h3>
+        <p class="process-step-desc">6 mois de transformation. 12 séances. Des outils. Un interlocuteur qui vous dit la vérité.</p>
+      </div>
+    </div>
+    <p class="process-note reveal">
+      Guillaume accompagne un nombre limité de dirigeants par an. Cette sélection garantit la qualité et l'intensité de chaque accompagnement.
+    </p>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ─── FORM ─── -->
+<section id="candidature">
+  <div class="container">
+    <div class="form-header">
+      <p class="section-label reveal">Candidature</p>
+      <h2 class="section-title reveal reveal-delay-1">Candidater au programme APEX Leadership™</h2>
+      <div class="divider divider--center reveal reveal-delay-2"></div>
+      <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto;">Réponse sous 48h ouvrées. Vos données restent strictement confidentielles.</p>
+    </div>
+    <div class="form-wrap reveal">
+      <div id="formContent">
+        <form id="candidatureForm" onsubmit="handleSubmit(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+              <label for="email">Email professionnel *</label>
+              <input type="email" id="email" name="email" required placeholder="vous@entreprise.com">
+            </div>
+            <div class="form-group">
+              <label for="tel">Téléphone *</label>
+              <input type="tel" id="tel" name="tel" required placeholder="+33 6 00 00 00 00">
+            </div>
+            <div class="form-group full">
+              <label for="fonction">Votre fonction et secteur d'activité *</label>
+              <input type="text" id="fonction" name="fonction" required placeholder="Ex : PDG — Industrie manufacturière">
+            </div>
+            <div class="form-group">
+              <label for="taille">Taille de votre organisation *</label>
+              <select id="taille" name="taille" required>
+                <option value="" disabled selected>Nombre de collaborateurs</option>
+                <option value="10-30">10 à 30 collaborateurs</option>
+                <option value="30-100">30 à 100 collaborateurs</option>
+                <option value="100-300">100 à 300 collaborateurs</option>
+                <option value="300-500">300 à 500 collaborateurs</option>
+                <option value="500+">Plus de 500 collaborateurs</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="coaching">Avez-vous déjà réalisé un coaching ?</label>
+              <select id="coaching" name="coaching">
+                <option value="" disabled selected>Sélectionner</option>
+                <option value="non">Non, c'est une première</option>
+                <option value="oui">Oui, coaching individuel</option>
+                <option value="oui-collectif">Oui, coaching collectif</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="defi">Quel est le défi de leadership principal que vous traversez ? *</label>
+              <textarea id="defi" name="defi" required placeholder="En 3 à 5 lignes, décrivez le contexte et ce qui vous amène à considérer un accompagnement..."></textarea>
+            </div>
+            <div class="form-group full">
+              <label for="source">Comment avez-vous entendu parler de Guillaume ORTIN ?</label>
+              <select id="source" name="source">
+                <option value="" disabled selected>Sélectionner</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="recommandation">Recommandation</option>
+                <option value="google">Recherche Google</option>
+                <option value="evenement">Événement / conférence</option>
+                <option value="presse">Presse / podcast</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-submit-wrap">
+            <button type="submit" class="btn-submit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Envoyer ma candidature
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Candidature reçue</h3>
+        <p>Merci pour votre candidature. Guillaume reviendra vers vous sous 48h ouvrées pour convenir d'un entretien de sélection.</p>
+      </div>
+      <p class="form-legal" id="formLegal">Vos données sont traitées dans le strict respect de la RGPD et ne sont jamais partagées avec des tiers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Guillaume <span>ORTIN</span></div>
+        <p class="footer-tagline">"Vous avez construit votre entreprise. Il est temps de construire votre leadership."</p>
+        <div class="footer-certs">
+          <div class="footer-cert">ICF PCC</div>
+          <div class="footer-cert">NeuroLeadership Institute</div>
+          <div class="footer-cert">Process Communication Model®</div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <nav class="footer-nav">
+          <a href="#hero">Accueil</a>
+          <a href="#method">La méthode</a>
+          <a href="#program">Programme</a>
+          <a href="#about">À propos</a>
+          <a href="#candidature">Candidater</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/guillaume-ortin" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.5C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Guillaume ORTIN — Coaching Exécutif. Annecy, France.</p>
+      <div class="footer-legal">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">CGV</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll behavior
+  const nav = document.getElementById('nav');
+  const scrollProgress = document.getElementById('scrollProgress');
+
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    nav.classList.toggle('scrolled', scrolled > 40);
+
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    scrollProgress.style.width = (scrolled / max * 100) + '%';
+
+    revealOnScroll();
+  }, { passive: true });
+
+  // Mobile menu
+  function toggleMenu() {
+    const links = document.getElementById('navLinks');
+    const burger = document.getElementById('navBurger');
+    links.classList.toggle('open');
+    burger.classList.toggle('open');
+  }
+
+  // Close menu on link click
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('navBurger').classList.remove('open');
+    });
+  });
+
+  // Reveal on scroll
+  function revealOnScroll() {
+    const els = document.querySelectorAll('.reveal:not(.visible)');
+    els.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 60) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  // Initial reveal check
+  document.addEventListener('DOMContentLoaded', () => {
+    revealOnScroll();
+  });
+
+  // Form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = document.getElementById('formContent');
+    const success = document.getElementById('formSuccess');
+    const legal = document.getElementById('formLegal');
+    form.style.display = 'none';
+    legal.style.display = 'none';
+    success.classList.add('visible');
+  }
+
+  // Smooth active nav highlighting
+  const sections = document.querySelectorAll('section[id]');
+  const navLinksAll = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+    });
+    navLinksAll.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--gold)' : '';
+    });
+  }, { passive: true });
+</script>
+
+</body>
+</html>
