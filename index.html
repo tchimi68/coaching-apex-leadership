@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="v5">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,132 +9,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    /* ═══════════════════════════════════════
-       THEME V1 — Noir & Or (default)
-    ═══════════════════════════════════════ */
     :root {
-      --bg: #0A0A0F;
-      --bg-alt: #1B2A4A;
-      --bg-card: #12151E;
-      --bg-card-hover: #161A26;
-      --gold: #C9A84C;
-      --gold-light: #DFB96A;
-      --gold-dim: rgba(201,168,76,0.12);
-      --text: #F0EDE6;
-      --text-muted: #A8A8B0;
-      --border: rgba(201,168,76,0.2);
-      --border-subtle: rgba(240,237,230,0.07);
-      --f-display: 'Cormorant Garamond', Georgia, serif;
-      --f-body: 'DM Sans', system-ui, sans-serif;
-      /* extended */
-      --nav-bg: rgba(10,10,15,0.96);
-      --h-ov1: rgba(27,42,74,0.5);
-      --h-ov2: rgba(201,168,76,0.06);
-      --pain-bg: rgba(10,10,15,0.4);
-      --pain-hover: rgba(10,10,15,0.6);
-      --portrait-from: #12151E;
-      --portrait-to: #1B2A4A;
-      --stat-bg: rgba(10,10,15,0.5);
-      --input-bg: rgba(240,237,230,0.03);
-      --fit-no: #ff6060;
-    }
-
-    /* ═══════════════════════════════════════
-       THEME V2 — Marine & Argent
-    ═══════════════════════════════════════ */
-    html[data-theme="v2"] {
-      --bg: #060E1C;
-      --bg-alt: #091525;
-      --bg-card: #0C1830;
-      --bg-card-hover: #0F1D38;
-      --gold: #8AAEC8;
-      --gold-light: #A8CCE4;
-      --gold-dim: rgba(138,174,200,0.12);
-      --text: #EBF2F8;
-      --text-muted: #7A95AA;
-      --border: rgba(138,174,200,0.2);
-      --border-subtle: rgba(235,242,248,0.07);
-      --f-display: 'Libre Baskerville', Georgia, serif;
-      --f-body: 'Inter', system-ui, sans-serif;
-      --nav-bg: rgba(6,14,28,0.96);
-      --h-ov1: rgba(15,40,70,0.55);
-      --h-ov2: rgba(138,174,200,0.04);
-      --pain-bg: rgba(6,14,28,0.5);
-      --pain-hover: rgba(6,14,28,0.7);
-      --portrait-from: #0C1830;
-      --portrait-to: #0D2040;
-      --stat-bg: rgba(6,14,28,0.5);
-      --input-bg: rgba(235,242,248,0.03);
-      --fit-no: #e06060;
-    }
-
-    /* ═══════════════════════════════════════
-       THEME V3 — Forêt & Ambre
-    ═══════════════════════════════════════ */
-    html[data-theme="v3"] {
-      --bg: #0C1510;
-      --bg-alt: #112019;
-      --bg-card: #0F1B14;
-      --bg-card-hover: #122018;
-      --gold: #C97830;
-      --gold-light: #DA8E4A;
-      --gold-dim: rgba(201,120,48,0.12);
-      --text: #EAE4D5;
-      --text-muted: #8A9E90;
-      --border: rgba(201,120,48,0.22);
-      --border-subtle: rgba(234,228,213,0.07);
-      --f-display: 'Cormorant Garamond', Georgia, serif;
-      --f-body: 'DM Sans', system-ui, sans-serif;
-      --nav-bg: rgba(12,21,16,0.96);
-      --h-ov1: rgba(15,35,20,0.5);
-      --h-ov2: rgba(201,120,48,0.05);
-      --pain-bg: rgba(12,21,16,0.4);
-      --pain-hover: rgba(12,21,16,0.65);
-      --portrait-from: #0F1B14;
-      --portrait-to: #162A1C;
-      --stat-bg: rgba(12,21,16,0.5);
-      --input-bg: rgba(234,228,213,0.03);
-      --fit-no: #e06060;
-    }
-
-    /* ═══════════════════════════════════════
-       THEME V4 — Béton & Cuivre
-    ═══════════════════════════════════════ */
-    html[data-theme="v4"] {
-      --bg: #121212;
-      --bg-alt: #1A1A1E;
-      --bg-card: #171718;
-      --bg-card-hover: #1C1C20;
-      --gold: #A06040;
-      --gold-light: #BA7858;
-      --gold-dim: rgba(160,96,64,0.12);
-      --text: #E5E1D8;
-      --text-muted: #8C8478;
-      --border: rgba(160,96,64,0.22);
-      --border-subtle: rgba(229,225,216,0.07);
-      --f-display: 'Playfair Display', Georgia, serif;
-      --f-body: 'Nunito Sans', system-ui, sans-serif;
-      --nav-bg: rgba(18,18,18,0.96);
-      --h-ov1: rgba(28,22,16,0.4);
-      --h-ov2: rgba(160,96,64,0.05);
-      --pain-bg: rgba(18,18,18,0.5);
-      --pain-hover: rgba(18,18,18,0.7);
-      --portrait-from: #171718;
-      --portrait-to: #201E1C;
-      --stat-bg: rgba(18,18,18,0.5);
-      --input-bg: rgba(229,225,216,0.03);
-      --fit-no: #e06060;
-    }
-
-    /* ═══════════════════════════════════════
-       THEME V5 — Ivoire & Bordeaux (LIGHT)
-    ═══════════════════════════════════════ */
-    html[data-theme="v5"] {
       --bg: #F7F3EC;
       --bg-alt: #EDE8DF;
       --bg-card: #FFFFFF;
@@ -160,13 +40,10 @@
       --fit-no: #c0302a;
     }
 
-    html[data-theme="v5"] ::selection { background: rgba(139,26,44,0.12); color: #8B1A2C; }
-    html[data-theme="v5"] .portrait-initials { color: rgba(139,26,44,0.1); }
-    html[data-theme="v5"] .about-portrait-placeholder .portrait-initials { color: rgba(139,26,44,0.1); }
-    html[data-theme="v5"] input,
-    html[data-theme="v5"] select,
-    html[data-theme="v5"] textarea { border-color: rgba(26,21,16,0.12); }
-    html[data-theme="v5"] select option { background: #fff; color: #1A1510; }
+    ::selection { background: rgba(139,26,44,0.12); color: #8B1A2C; }
+    .portrait-initials { color: rgba(139,26,44,0.1); }
+    input, select, textarea { border-color: rgba(26,21,16,0.12); }
+    select option { background: #fff; color: #1A1510; }
 
     /* ─── GLOBAL ─── */
     html { scroll-behavior: smooth; }
@@ -178,7 +55,6 @@
       line-height: 1.7;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
-      transition: background 0.4s, color 0.4s;
     }
     ::selection { background: var(--gold-dim); color: var(--gold-light); }
     img { max-width: 100%; display: block; }
@@ -496,55 +372,6 @@
     .footer-legal a { font-size: 12px; color: var(--text-muted); transition: color 0.2s; }
     .footer-legal a:hover { color: var(--text); }
 
-    /* ─── THEME BAR ─── */
-    #themeBar {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 500;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      background: rgba(6,6,10,0.92);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 50px;
-      padding: 7px 10px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
-      white-space: nowrap;
-    }
-    .tb-label {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
-      padding: 0 10px 0 4px;
-      border-right: 1px solid rgba(255,255,255,0.1);
-      margin-right: 4px;
-      font-family: 'DM Sans', system-ui, sans-serif;
-    }
-    .tb-btn {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      padding: 6px 12px;
-      border: none;
-      background: transparent;
-      border-radius: 40px;
-      cursor: pointer;
-      font-family: 'DM Sans', system-ui, sans-serif;
-      font-size: 11px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.45);
-      letter-spacing: 0.04em;
-      transition: background 0.2s, color 0.2s;
-    }
-    .tb-btn:hover { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85); }
-    .tb-btn.active { background: rgba(255,255,255,0.14); color: #fff; }
-    .tb-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
 
     /* ─── REVEAL ANIMATIONS ─── */
     .reveal { opacity: 0; transform: translateY(28px); }
@@ -1117,31 +944,8 @@
   </div>
 </footer>
 
-<!-- ─── THEME CHOOSER ─── -->
-<div id="themeBar">
-  <span class="tb-label">Choisir un style</span>
-  <button class="tb-btn" data-t="v1" onclick="setTheme('v1')"><span class="tb-dot" style="background:#C9A84C"></span><span class="tb-name">Noir & Or</span></button>
-  <button class="tb-btn" data-t="v2" onclick="setTheme('v2')"><span class="tb-dot" style="background:#8AAEC8"></span><span class="tb-name">Marine & Argent</span></button>
-  <button class="tb-btn" data-t="v3" onclick="setTheme('v3')"><span class="tb-dot" style="background:#C97830"></span><span class="tb-name">Forêt & Ambre</span></button>
-  <button class="tb-btn" data-t="v4" onclick="setTheme('v4')"><span class="tb-dot" style="background:#A06040"></span><span class="tb-name">Béton & Cuivre</span></button>
-  <button class="tb-btn active" data-t="v5" onclick="setTheme('v5')"><span class="tb-dot" style="background:#8B1A2C"></span><span class="tb-name">Ivoire & Bordeaux</span></button>
-</div>
 
 <script>
-  // ─── THEME ───
-  function setTheme(t) {
-    document.documentElement.setAttribute('data-theme', t);
-    document.querySelectorAll('[data-t]').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.t === t);
-    });
-    const url = new URL(window.location);
-    url.searchParams.set('theme', t);
-    history.replaceState({}, '', url);
-  }
-  // Init from URL
-  const urlTheme = new URLSearchParams(window.location.search).get('theme') || 'v5';
-  setTheme(urlTheme);
-
   // ─── NAV ───
   const nav = document.getElementById('nav');
   const progress = document.getElementById('scrollProgress');
